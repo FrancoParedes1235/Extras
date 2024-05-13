@@ -6,6 +6,9 @@ for i in {1..5}; do
     read nombre
     arreglos+="($nombre)"
 done
+
+echo "${arreglos[@]}"
+
 for i in "${arreglos[@]}"; do
     echo "${arreglos[i]}"
     #echo "$i"
