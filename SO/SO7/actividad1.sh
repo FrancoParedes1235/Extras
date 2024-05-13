@@ -14,3 +14,11 @@ for i in "${arreglos[@]}"; do
     #echo "$i"
 done
 
+echo "El número de elementosdel arreglo es: (Obtén el número de elementos del arreglo): ${#arreglos[@]}"
+
+echo "Ingreso el numero de arreglo a borrar"
+read borrar
+unset arreglos[$borrar]
+
+echo "${arreglo[@]}"
+echo "${#arreglo[@]}"-
